@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="libraries/style.css" type="text/css" rel="stylesheet">
+	<link href="libraries/jquery-ui.min.css" type="text/css" rel="stylesheet">
+	<title>GrainPlayer</title>
+	<script src="libraries/jquery-3.4.1.min.js"></script>
+	<script src="libraries/jquery-ui.min.js"></script>
+	<script src="sketch.js"></script>
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="libraries/Tone.js"></script>
+
+
+
+
+	<script>
+		window.addEventListener("keydown", function(e) {
+			if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+				e.preventDefault();
+			}
+		}, false);
+	</script>
+
+	<style>
+	</style>
+</head>
+
+<body>
+	<section class="firstSection">
+		<div id="startSlider" class="slider"></div>
+		<div id="endSlider" class="slider"></div>
+		<div id="detuneSlider" class="slider"></div>
+		<div id="grainSizeSlider" class="slider"></div>
+		<div id="overlapSlider" class="slider"></div>
+		<div id="rateSlider" class="slider"></div>
+		<div class="reverseBox">
+			<label for="checkbox-1">Reverse</label>
+			<input type="checkbox" name="checkbox-1" id="checkbox-1">
+		</div>
+		<div id="dropZone">
+			<p style="background-color: white; padding: 15px">Drop File Here</p>
+		</div>
+	</section>
+</body>
+
+</html>

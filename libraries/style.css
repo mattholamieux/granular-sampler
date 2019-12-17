@@ -1,0 +1,40 @@
+section {
+  /* margin: 50px 50px; */
+  border: 70px orange solid;
+  background-color: teal;
+  padding: 50px;
+}
+
+
+.slider {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.ui-slider-handle {
+  background-color: black !important;
+}
+
+.reverseBox {
+display: flex;
+justify-content: center;
+margin-bottom: 30px;
+}
+
+#dropZone {
+  display: flex;
+  /* background-color: white; */
+  text-align: center;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+/*
+#defaultCanvas0{
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: -1;
+} */
